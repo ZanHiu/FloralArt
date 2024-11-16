@@ -1,0 +1,62 @@
+.banner {
+  background-image: url('../imgs/imgProductsPage.jpg');
+  background-size: contain;
+  height: 50vh;
+}
+
+.container {
+  display: flex;
+}
+
+.filter {
+  width: 25%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.filter .filter-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.filter-item {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.filter-item label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.filter-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.product-list {
+  width: 75%;
+  padding: 1rem;
+}
+
+.product-list h2 {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.product {
+  margin-bottom: 1.5rem;
+}
+
+.product-image img {
+  height: 280px;
+}
+
+.product-buttons {
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
