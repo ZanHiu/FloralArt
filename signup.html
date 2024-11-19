@@ -13,7 +13,7 @@
 <body>
   <div class="banner">
     <div class="overlay">
-      <header>
+      <header id="header">
         <div class="logo"><a href="index.html">FLORAL ART</a></div>
         <nav>
           <a href="index.html" class="nav-item">Home</a>
@@ -30,8 +30,39 @@
           <a href="contact.html" class="nav-item">Contact</a>
         </nav>
         <div class="header-icon">
-          <a href="#" class="icon"><i class="fas fa-search"></i></a>
-          <a href="#" class="icon"><i class="fas fa-shopping-bag"></i></a>
+          <a href="#" class="icon nav-item"><i class="fas fa-search"></i></a>
+          <div class="dropdown">
+            <a href="./cart.html" class="icon dropdown-toggle"><i class="fas fa-shopping-bag"></i></a>
+            <div class="dropdown-menu cart-dropdown">
+              <h3>Cart</h3>
+              <!-- <div class="cart-empty">
+                <h3>Your cart is empty</h3>
+              </div> -->
+              <div class="cart-item">
+                <div class="item-image">
+                  <img src="./imgs/fresh1.webp" alt="Flower 1">
+                </div>
+                <div class="item-info">
+                  <div class="item-name">Eveline Bouquet</div>
+                  <div class="item-price">RP 1.800.000</div>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="item-image">
+                  <img src="./imgs/fresh2.webp" alt="Flower 2">
+                </div>
+                <div class="item-info">
+                  <div class="item-name">Samantha Bouquet</div>
+                  <div class="item-price">RP 1.800.000</div>
+                </div>
+              </div>
+              <div class="cart-total">
+                <div class="total-label">Total:</div>
+                <div class="total-price">RP 3.600.000</div>
+              </div>
+                <button class="check-out-btn">Check Out</button>
+            </div>
+          </div>
           <div class="dropdown">
             <a href="#" class="icon dropdown-toggle"><i class="fas fa-user"></i></a>
             <div class="dropdown-menu dropdown-right">
@@ -42,22 +73,23 @@
         </div>
       </header>
       <div class="banner-content">
-        <h2 class="title">CUSTOM ORDER</h2>
+        <h2 class="title">SIGN UP</h2>
         <p class="description">You can make your own creation. Just describe what you want and we'll contact you for
           more details.</p>
         <form class="contact-form">
           <div class="form-group">
             <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
             <input type="tel" name="phone" placeholder="Your Phone" required>
           </div>
           <div class="form-group">
-            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" placeholder="Your Password" required>
           </div>
           <button type="submit">Submit</button>
         </form>
+        <p class="description">Already have an account? <a href="login.html">Log in</a> here</p>
       </div>
       <footer>
         <div class="footer-content">

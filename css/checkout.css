@@ -1,0 +1,77 @@
+.cart-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-col {
+  width: 60%;
+}
+
+.right-col {
+  width: 40%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h3 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.block {
+  display: block;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 48%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-group input[name="email"],
+.form-group input[name="region"],
+.form-group input[name="address"]{
+  width: 100%;
+}
+
+.form-group input[type="radio"] {
+  width: 20px;
+  text-align: left;
+}
+
+.form-group textarea {
+  height: 100px;
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ff4081;
+  background-color: #fff;
+}

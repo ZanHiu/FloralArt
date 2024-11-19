@@ -1,100 +1,100 @@
 .banner {
- background-image: url('../imgs/imgContactPage.jpg');
+  background-image: url('../imgs/imgContactPage.jpg');
 }
 
 .overlay {
- background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-content {
- text-align: center;
- padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .banner-content .title {
- font-size: 1.5rem;
- font-weight: bold;
- line-height: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
 }
 
 .banner-content .description {
- font-size: 1rem;
- max-width: 600px;
- margin: 0 auto;
- text-align: left;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .banner-content .description span {
- font-weight: bold;
+  font-weight: bold;
 }
 
 .contact-form {
- display: flex;
- flex-direction: column;
- width: 100%;
- max-width: 600px;
- margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .form-group {
- display: flex;
- justify-content: space-between;
- margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .form-group input,
 .form-group textarea {
- width: 48%;
- padding: 0.5rem;
- border: 1px solid #ddd;
- border-radius: 5px;
- background-color: transparent;
- color: #fff;
+  width: 48%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
 }
 
 .form-group input[type="tel"] {
- width: 100%;
+  width: 100%;
 }
 
 .form-group textarea {
- height: 100px;
- width: 100%;
+  height: 100px;
+  width: 100%;
 }
 
 button {
- padding: 0.5rem 1rem;
- background-color: #ff4081;
- color: white;
- border: none;
- border-radius: 5px;
- cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
- color: #ff4081;
- background-color: #fff;
+  color: #ff4081;
+  background-color: #fff;
 }
 
 footer {
- background: transparent;
- padding: 2rem 0 0.5rem 0;
+  background: transparent;
+  padding: 2rem 0 0.5rem 0;
 }
 
 footer .footer-content h4 {
- color: #ff4081;
+  color: #ff4081;
 }
 
 .newsletter .social-links {
- margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .newsletter .social-links a {
- color: white;
- text-decoration: none;
- font-size: 1.25rem;
- margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-right: 1rem;
 }
 
 .newsletter .social-links a:hover {
- color: #ff4081;
+  color: #ff4081;
 }
