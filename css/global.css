@@ -301,6 +301,7 @@ main {
 
 .product-list .products {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2.5rem;
   gap: 1.5rem;
@@ -308,7 +309,8 @@ main {
 
 .product-list .products .product {
   text-align: left;
-  width: 25%;
+  flex: 0 0 calc(25% - 1.5rem);
+  box-sizing: border-box;
 }
 
 .product-list .products .product .product-name {

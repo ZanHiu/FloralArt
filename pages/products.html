@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Floral Art</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+  <div class="banner">
+    <div class="overlay">
+      <header id="header">
+        <div class="logo"><a href="../index.html">FLORAL ART</a></div>
+        <nav>
+          <a href="../index.html" class="nav-item">Home</a>
+          <div class="dropdown">
+            <a href="products.html" class="dropdown-toggle nav-item active">Products</a>
+            <div class="dropdown-menu">
+              <a href="products.html#fresh-flowers">Fresh Flowers</a>
+              <a href="products.html#everlasting-flowers">Everlasting and Dried Flowers</a>
+              <a href="products.html#artificial-flowers">Artificial Flowers</a>
+            </div>
+          </div>
+          <a href="custom-order.html" class="nav-item">Custom Order</a>
+          <a href="about.html" class="nav-item">About Us</a>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+        <div class="header-icon">
+          <a href="#" class="icon nav-item"><i class="fas fa-search"></i></a>
+          <!-- <div class="dropdown"> -->
+            <a href="cart.html" class="icon nav-item"><i class="fas fa-shopping-bag"></i></a>
+            <!-- <div class="dropdown-menu cart-dropdown">
+              <h3>Cart</h3>
+              <div class="cart-item">
+                <div class="item-image">
+                  <img src="../imgs/fresh1.webp" alt="Flower 1">
+                </div>
+                <div class="item-info">
+                  <div class="item-name">Eveline Bouquet</div>
+                  <div class="item-price">RP 1.800.000</div>
+                </div>
+              </div>
+              <div class="cart-total">
+                <div class="total-label">Total:</div>
+                <div class="total-price">RP 3.600.000</div>
+              </div>
+              <button class="check-out-btn">Check Out</button>
+            </div> -->
+          <!-- </div> -->
+          <div class="dropdown">
+            <a href="#" class="icon dropdown-toggle"><i class="fas fa-user"></i></a>
+            <div class="dropdown-menu dropdown-right">
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Log In</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="banner-content">
+        <h1 class="title">OUR FLORAL CREATIONS</h1>
+        <p class="description">Discover our diverse, elegant floral collection. Find the perfect bouquet to gift or
+          brighten your space.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- <aside class="filter">
+      <h3 class="filter-title">Products</h3>
+      <div class="filter-item">
+        <h4>Floral Types</h4>
+        <label><input type="checkbox">Fresh Flowers</label>
+        <label><input type="checkbox">Everlasting and Dried Flowers</label>
+        <label><input type="checkbox">Artificial Flowers</label>
+      </div>
+      <div class="filter-item">
+        <h4>Floral Arrangements</h4>
+        <label><input type="checkbox">Bouquets</label>
+        <label><input type="checkbox">Vases</label>
+        <label><input type="checkbox">Boxes</label>
+      </div>
+      <div class="filter-item">
+        <h4>Occasions</h4>
+        <label><input type="checkbox">Christmas</label>
+        <label><input type="checkbox">Lunar New Year</label>
+        <label><input type="checkbox">Wedding</label>
+        <label><input type="checkbox">Birthday</label>
+      </div>
+      <div class="filter-item">
+        <h4>Price</h4>
+        <label><input type="checkbox">Less than 1.000.000</label>
+        <label><input type="checkbox">1.000.000 - 2.000.000</label>
+        <label><input type="checkbox">More than 2.000.000</label>
+      </div>
+    </aside> -->
+    <aside class="filter">
+      <h3 class="filter-title">Products</h3>
+      <div class="filter-item">
+        <h4>Floral Types</h4>
+        <div id="fresh-flowers" class="tab" onclick="filterProducts('Fresh Flowers')">Fresh Flowers</div>
+        <div id="everlasting-flowers" class="tab" onclick="filterProducts('Everlasting and Dried Flowers')">Everlasting and Dried Flowers</div>
+        <div class="tab" onclick="filterProducts('Artificial Flowers')">Artificial Flowers</div>
+      </div>
+      <div class="filter-item">
+        <h4>Floral Arrangements</h4>
+        <div id="bouquets" class="tab" onclick="filterProducts('Bouquets')">Bouquets</div>
+        <div id="vases" class="tab" onclick="filterProducts('Vases')">Vases</div>
+        <div id="boxes" class="tab" onclick="filterProducts('Boxes')">Boxes</div>
+      </div>
+      <div class="filter-item">
+        <h4>Occasions</h4>
+        <div id="christmas" class="tab" onclick="filterProducts('Christmas')">Christmas</div>
+        <div id="lunar-new-year" class="tab" onclick="filterProducts('Lunar New Year')">Lunar New Year</div>
+        <div id="wedding" class="tab" onclick="filterProducts('Wedding')">Wedding</div>
+        <div id="birthday" class="tab" onclick="filterProducts('Birthday')">Birthday</div>
+      </div>
+    </aside>
+    <main>
+      <div class="product-list">
+        <h2 id="all-products">All Products</h2>
+        <div class="products">
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/fresh1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Eveline Bouquet</h4>
+            <p class="product-price">Rp 1.800.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/fresh2.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Samantha Bouquet</h4>
+            <p class="product-price">Rp 1.800.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/fresh3.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">The Blue Paradise</h4>
+            <p class="product-price">Rp 2.200.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/fresh4.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Elegance Fairy Red Vase</h4>
+            <p class="product-price">Rp 2.300.000</p>
+          </div> -->
+        </div>
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+
+        <!-- <h2 id="everlasting-flowers">Everlasting and Dried Flowers</h2> -->
+        <!-- <div class="products"> -->
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/dried1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Everlasting Rose in Red</h4>
+            <p class="product-price">Rp 1.800.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/dried2.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Dear Ellie Preserved Flowers Bouquet</h4>
+            <p class="product-price">Rp 2.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/dried3.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Pink Garden Preserved Flower</h4>
+            <p class="product-price">Rp 1.400.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/dried4.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Lovely Mia Preserved Flowers</h4>
+            <p class="product-price">Rp 1.800.000</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+
+        <!-- <h2 id="artificial-flowers">Artificial Flowers</h2> -->
+        <!-- <div class="products"> -->
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/artifi1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Citrus Bloom Artificial Flower Vase</h4>
+            <p class="product-price">Rp 1.700.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/artifi2.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Tropical Sunrise Artificial Flower Vases</h4>
+            <p class="product-price">Rp 2.300.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/artifi3.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Classic Coastal Artificial Flowers</h4>
+            <p class="product-price">Rp 3.000.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/artifi4.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Radiant Fields Artificial Flowers</h4>
+            <p class="product-price">Rp 1.600.000</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+
+        <!-- <h2 id="bouquets">Bouquets</h2> -->
+        <!-- <div class="products"> -->
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/bouquet1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Royal Velvet Bouquet</h4>
+            <p class="product-price">Rp 2.800.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/bouquet2.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Passion's Embrace Bouquet</h4>
+            <p class="product-price">Rp 2.200.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/bouquet3.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Fuschia Fairy</h4>
+            <p class="product-price">Rp 1.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/bouquet4.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Blue Marlin</h4>
+            <p class="product-price">Rp 1.350.000</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+
+        <!-- <h2 id="vases">Vases</h2> -->
+        <!-- <div class="products"> -->
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/vase1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Pink Mondial Phalaenopsis Vase</h4>
+            <p class="product-price">Rp 2.200.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/vase2.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Beautiful Capri Vase</h4>
+            <p class="product-price">Rp 1.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/vase3.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Beautiful Geneva Vase</h4>
+            <p class="product-price">Rp 950.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/vase4.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Josephine Vase</h4>
+            <p class="product-price">Rp 2.800.000</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+
+        <!-- <h2 id="boxes">Boxes</h2> -->
+        <!-- <div class="products"> -->
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/box1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Bianca Floral Basket</h4>
+            <p class="product-price">Rp 2.200.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/box2.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Pink Ohara Blossom Box</h4>
+            <p class="product-price">Rp 2.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/box3.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Lovely Harmony Blossom Box</h4>
+            <p class="product-price">Rp 1.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/box4.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Opulent Roses Blossom Box</h4>
+            <p class="product-price">Rp 950.000</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+
+        <!-- <h2 id="occasions">Occasions</h2> -->
+        <!-- <div class="products"> -->
+          <!-- <div class="product">
+            <div class="product-image">
+              <img src="../imgs/occasion1.webp" alt="Product 1">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Seasonal Splendor Christmas Tree</h4>
+            <p class="product-price">Rp 1.700.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/occasion3.webp" alt="Product 2">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Romantic Purple Blush Wedding with Balloon</h4>
+            <p class="product-price">Rp 2.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/occasion5.webp" alt="Product 3">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Prestige Dragon Harmony Arrangement</h4>
+            <p class="product-price">Rp 3.500.000</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="../imgs/occasion7.webp" alt="Product 4">
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="view-detail">View Detail</button>
+              </div>
+            </div>
+            <h4 class="product-name">Sweet Exquisite Miracle</h4>
+            <p class="product-price">Rp 2.500.000</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <div class="btn-wrapper">
+          <button class="see-more-btn">See More</button>
+        </div> -->
+        <!-- <div class="line-break"></div> -->
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h4 class="logo">FLORAL ART</h4>
+        <p>Email: contact@floralart.com</p>
+        <p>Phone: +84 123 456 789</p>
+      </div>
+      <div class="working-hours">
+        <h4>Working hours</h4>
+        <p>Mon - Fri: 8:00 - 18:00</p>
+        <p>Sat: 9:00 - 17:00</p>
+        <p>Sun: Closed</p>
+      </div>
+      <div class="quick-links">
+        <h4>Quick links</h4>
+        <a href="#">Products</a>
+        <a href="#">Custom order</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="newsletter">
+        <h4>Newsletter</h4>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Floral Art. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+
+</html>

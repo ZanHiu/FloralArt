@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "id": "f82b",
+      "username": "admin",
+      "phone": "0978074381",
+      "email": "admin@gmail.com",
+      "password": "123123"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Eveline Bouquet",
+      "price": "Rp 1.800.000",
+      "image": "../imgs/fresh1.webp",
+      "category": "Fresh Flowers",
+      "description": "Eveline Bouquet is a sophisticated and elegant bouquet of fresh flowers, perfect for special occasions such as birthdays, anniversaries, or as a thoughtful gift to express your love and care. Carefully selected from the freshest blooms, this bouquet not only brings vibrant colors but also conveys heartfelt emotions."
+    },
+    {
+      "id": "2",
+      "name": "Samantha Bouquet",
+      "price": "Rp 1.800.000",
+      "image": "../imgs/fresh2.webp",
+      "category": "Fresh Flowers"
+    },
+    {
+      "id": "3",
+      "name": "The Blue Paradise",
+      "price": "Rp 2.200.000",
+      "image": "../imgs/fresh3.webp",
+      "category": "Fresh Flowers"
+    },
+    {
+      "id": "4",
+      "name": "Elegance Fairy Red Vase",
+      "price": "Rp 2.300.000",
+      "image": "../imgs/fresh4.webp",
+      "category": "Fresh Flowers"
+    },
+    {
+      "id": "5",
+      "name": "Everlasting Rose in Red",
+      "price": "Rp 1.800.000",
+      "image": "../imgs/dried1.webp",
+      "category": "Everlasting and Dried Flowers"
+    },
+    {
+      "id": "6",
+      "name": "Dear Ellie Preserved Flowers Bouquet",
+      "price": "Rp 2.500.000",
+      "image": "../imgs/dried2.webp",
+      "category": "Everlasting and Dried Flowers"
+    },
+    {
+      "id": "7",
+      "name": "Pink Garden Preserved Flower",
+      "price": "Rp 1.400.000",
+      "image": "../imgs/dried3.webp",
+      "category": "Everlasting and Dried Flowers"
+    },
+    {
+      "id": "8",
+      "name": "Lovely Mia Preserved Flowers",
+      "price": "Rp 1.800.000",
+      "image": "../imgs/dried4.webp",
+      "category": "Everlasting and Dried Flowers"
+    },
+    {
+      "id": "9",
+      "name": "Citrus Bloom Artificial Flower Vase",
+      "price": "Rp 1.700.000",
+      "image": "../imgs/artifi1.webp",
+      "category": "Artificial Flowers"
+    },
+    {
+      "id": "10",
+      "name": "Tropical Sunrise Artificial Flower Vases",
+      "price": "Rp 2.300.000",
+      "image": "../imgs/artifi2.webp",
+      "category": "Artificial Flowers"
+    },
+    {
+      "id": "11",
+      "name": "Classic Coastal Artificial Flowers",
+      "price": "Rp 3.000.000",
+      "image": "../imgs/artifi3.webp",
+      "category": "Artificial Flowers"
+    },
+    {
+      "id": "12",
+      "name": "Radiant Fields Artificial Flowers",
+      "price": "Rp 1.600.000",
+      "image": "../imgs/artifi4.webp",
+      "category": "Artificial Flowers"
+    },
+    {
+      "id": "13",
+      "name": "Royal Velvet Bouquet",
+      "price": "Rp 2.800.000",
+      "image": "../imgs/bouquet1.webp",
+      "category": "Bouquets"
+    },
+    {
+      "id": "14",
+      "name": "Passion's Embrace Bouquet",
+      "price": "Rp 2.200.000",
+      "image": "../imgs/bouquet2.webp",
+      "category": "Bouquets"
+    },
+    {
+      "id": "15",
+      "name": "Fuschia Fairy",
+      "price": "Rp 1.500.000",
+      "image": "../imgs/bouquet3.webp",
+      "category": "Bouquets"
+    },
+    {
+      "id": "16",
+      "name": "Blue Marlin",
+      "price": "Rp 1.350.000",
+      "image": "../imgs/bouquet4.webp",
+      "category": "Bouquets"
+    },
+    {
+      "id": "17",
+      "name": "Bianca Floral Basket",
+      "price": "Rp 2.200.000",
+      "image": "../imgs/box1.webp",
+      "category": "Boxes"
+    },
+    {
+      "id": "18",
+      "name": "Pink Ohara Blossom Box",
+      "price": "Rp 2.500.000",
+      "image": "../imgs/box2.webp",
+      "category": "Boxes"
+    },
+    {
+      "id": "19",
+      "name": "Lovely Harmony Blossom Box",
+      "price": "Rp 1.500.000",
+      "image": "../imgs/box3.webp",
+      "category": "Boxes"
+    },
+    {
+      "id": "20",
+      "name": "Opulent Roses Blossom Box",
+      "price": "Rp 950.000",
+      "image": "../imgs/box4.webp",
+      "category": "Boxes"
+    }
+  ],
+  "cart": [],
+  "order": []
+}

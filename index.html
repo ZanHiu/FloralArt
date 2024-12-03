@@ -17,63 +17,60 @@
         <nav>
           <a href="index.html" class="nav-item active">Home</a>
           <div class="dropdown">
-            <a href="products.html" class="dropdown-toggle nav-item">Products</a>
+            <a href="./pages/products.html" class="dropdown-toggle nav-item">Products</a>
             <div class="dropdown-menu">
-              <a href="products.html#fresh-flowers">Fresh Flowers</a>
-              <a href="products.html#everlasting-flowers">Everlasting and Dried Flowers</a>
-              <a href="products.html#artificial-flowers">Artificial Flowers</a>
+              <a href="./pages/products.html#fresh-flowers">Fresh Flowers</a>
+              <a href="./pages/products.html#everlasting-flowers">Everlasting and Dried Flowers</a>
+              <a href="./pages/products.html#artificial-flowers">Artificial Flowers</a>
             </div>
           </div>
-          <a href="custom-order.html" class="nav-item">Custom Order</a>
-          <a href="about.html" class="nav-item">About Us</a>
-          <a href="contact.html" class="nav-item">Contact</a>
+          <a href="./pages/custom-order.html" class="nav-item">Custom Order</a>
+          <a href="./pages/about.html" class="nav-item">About Us</a>
+          <a href="./pages/contact.html" class="nav-item">Contact</a>
         </nav>
         <div class="header-icon">
           <a href="#" class="icon nav-item"><i class="fas fa-search"></i></a>
-          <div class="dropdown">
-            <a href="./cart.html" class="icon dropdown-toggle"><i class="fas fa-shopping-bag"></i></a>
-            <div class="dropdown-menu cart-dropdown">
+          <!-- <div class="dropdown"> -->
+            <a href="./pages/cart.html" class="icon nav-item">
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+            <!-- <div class="dropdown-menu cart-dropdown">
               <h3>Cart</h3>
-              <!-- <div class="cart-empty">
-                <p>Your cart is empty</p>
-              </div> -->
-              <div class="cart-item">
-                <div class="item-image">
-                  <img src="./imgs/fresh1.webp" alt="Flower 1">
-                </div>
-                <div class="item-info">
-                  <div class="item-name">Eveline Bouquet</div>
-                  <div class="item-price">RP 1.800.000</div>
-                </div>
-              </div>
-              <div class="cart-item">
-                <div class="item-image">
-                  <img src="./imgs/fresh2.webp" alt="Flower 2">
-                </div>
-                <div class="item-info">
-                  <div class="item-name">Samantha Bouquet</div>
-                  <div class="item-price">RP 1.800.000</div>
-                </div>
-              </div>
+              <div class="cart-items"></div>
               <div class="cart-total">
                 <div class="total-label">Total:</div>
-                <div class="total-price">RP 3.600.000</div>
+                <div id="total-price" class="total-price">RP 0.00</div>
               </div>
               <button class="check-out-btn">Check Out</button>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
           <div class="dropdown">
             <a href="#" class="icon dropdown-toggle"><i class="fas fa-user"></i></a>
-            <div class="dropdown-menu dropdown-right">
-              <a href="signup.html">Sign Up</a>
-              <a href="login.html">Log In</a>
+            <div id="userMenu" class="dropdown-menu dropdown-right">
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const isLoggedIn = localStorage.getItem('isLoggedIn');
+                  if (isLoggedIn === 'true') {
+                    document.getElementById('userMenu').innerHTML = `
+                      <a href="./pages/profile.html">Profile</a>
+                      <a href="" onclick="logout()">Logout</a>
+                    `;
+                  } else {
+                    document.getElementById('userMenu').innerHTML = `
+                      <a href="./pages/signup.html">Sign Up</a>
+                      <a href="./pages/login.html">Log In</a>
+                    `;
+                  }
+                });
+              </script>
             </div>
           </div>
         </div>
       </header>
       <div class="banner-content">
         <h1 class="title">A PLACE TO SEND LOVE<br>THROUGH EACH FLOWER</h1>
-        <p class="description">Where flowers meet art. Create special moments through delicate and luxurious bouquets for all occasions in
+        <p class="description">Where flowers meet art. Create special moments through delicate and luxurious bouquets
+          for all occasions in
           life.</p>
         <a href="#" class="shop-now-btn">
           <span>Shop Now</span>
@@ -121,14 +118,16 @@
           <img src="./imgs/imgIntro1.png" alt="Intro 1">
           <div class="intro-text">
             <h4>Art from nature</h4>
-            <p>Floral Art offers unique fresh flower creations, from elegant bouquets to luxurious flower boxes, helping you convey heartfelt emotions with style.</p>
+            <p>Floral Art offers unique fresh flower creations, from elegant bouquets to luxurious flower boxes, helping
+              you convey heartfelt emotions with style.</p>
           </div>
         </div>
         <div class="intro-content">
           <img src="./imgs/imgIntro2.png" alt="Intro 2">
           <div class="intro-text">
             <h4>Make your own mark on each moment</h4>
-            <p>Each Floral Art product is thoughtfully designed to bring joy and leave a lasting impression for any special occasion.</p>
+            <p>Each Floral Art product is thoughtfully designed to bring joy and leave a lasting impression for any
+              special occasion.</p>
           </div>
         </div>
       </div>
@@ -175,7 +174,7 @@
             <div class="product-tag">New</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail">View Detail</button>
+              <button class="view-detail" data-id="2">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">Butterfly Bliss Bouquet</h4>
@@ -187,7 +186,7 @@
             <div class="product-tag">New</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail">View Detail</button>
+              <button class="view-detail" data-id="3">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">Mystic Butterfly Delight</h4>
@@ -199,7 +198,7 @@
             <div class="product-tag">New</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail">View Detail</button>
+              <button class="view-detail" data-id="4">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">Lavender Flutter Fantasy</h4>
@@ -219,7 +218,7 @@
             <div class="product-tag">Sale</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail"><a href="./product-detail.html">View Detail</a></button>
+              <button class="view-detail" data-id="5">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">Eveline Bouquet</h4>
@@ -231,7 +230,7 @@
             <div class="product-tag">Sale</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail">View Detail</button>
+              <button class="view-detail" data-id="6">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">Samantha Bouquet</h4>
@@ -243,7 +242,7 @@
             <div class="product-tag">Sale</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail">View Detail</button>
+              <button class="view-detail" data-id="7">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">The Blue Paradise</h4>
@@ -255,7 +254,7 @@
             <div class="product-tag">Sale</div>
             <div class="product-buttons">
               <button class="add-to-cart">Add to Cart</button>
-              <button class="view-detail">View Detail</button>
+              <button class="view-detail" data-id="8">View Detail</button>
             </div>
           </div>
           <h4 class="product-name">Elegance Fairy Red Vase</h4>
@@ -301,6 +300,9 @@
   </footer>
 
   <script src="./js/main.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/detail.js"></script>
 </body>
 
 </html>

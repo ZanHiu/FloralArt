@@ -38,6 +38,23 @@
   margin-right: 0.5rem;
 }
 
+.filter .tab {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter .tab:hover {
+  background-color: #e0e0e0;
+}
+
+.filter .tab.active {
+  background-color: #d0d0d0; /* Màu nền cho tab đang được chọn */
+}
+
 .product-list {
   width: 75%;
   padding: 1rem;
